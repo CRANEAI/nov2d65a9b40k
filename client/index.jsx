@@ -16,9 +16,10 @@
         //----------------------------------------------------------------------------------------------------------
         
         import sign_up from './components/sign up.jsx'
-import search from './components/search.jsx'
 import follow from './components/follow.jsx'
 import share from './components/share.jsx'
+import payment from './components/payment.jsx'
+import search from './components/search.jsx'
        
         //----------------------------------------------------------------------------------------------------------
         //Reducer
@@ -41,9 +42,10 @@ import share from './components/share.jsx'
                     <Switch>
                         <Route path "/" component={sign_up}
                         <Route path="/sign_up" component={sign_up} /> 
-,<Route path="/search" component={search} /> 
 ,<Route path="/follow" component={follow} /> 
 ,<Route path="/share" component={share} /> 
+,<Route path="/payment" component={payment} /> 
+,<Route path="/search" component={search} /> 
 
                     </Switch>
                 </Router>
