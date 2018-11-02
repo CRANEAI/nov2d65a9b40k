@@ -7,20 +7,46 @@ created by: FusionCode
 // Component Requirements
 //----------------------------------------------------------------------------------------------------------
 
-the sign up view has a status bar located at the very-top across the full width of the view
-the sign up view has a Headline Label located at the top left of the view, correct text needs defined
-sign up view has Label located at the top left of the view, text needs identified
-sign up view has Label located at the top left of the view, text needs identified
-sign up view has Label located at the top left of the view, text needs identified
-sign up view has Label located at the mid-top left of the view, text needs identified
-sign up view has Label located at the mid-top left of the view, text needs identified
-the sign up view has a Input Box with text :l located at the mid-top in the center of the view
-sign up view has Label located at the main area left of the view, text needs identified
-the sign up view has a Pager located at the main area left of the view, correct text needs defined
-sign up view has a Label located at the mid-bottom center of the view with text ﬂ
-sign up view has Label located at the bottom center of the view, text needs identified
-sign up view has Label located at the bottom center of the view, text needs identified
-view has actions which trigger on events, view should should error messages and display activity indicator when processing
+the history view has a status bar located at the very-top across the full width of the view
+history view has a Label located at the mid-bottom left of the view with text k"
+history view has a Label located at the mid-bottom left of the view with text k"
+history view has a Label located at the mid-bottom left of the view with text k"
+the follow view has a add icon located at the very-top center of the view which on click will trigger the add() action
+the follow view has a like icon located at the bottom right of the view which on click will trigger the like() action
+the follow view has a like icon located at the  center of the view which on click will trigger the like() action
+the follow view has a add icon located at the very-top center of the view which on click will trigger the add() action
+the follow view has a like icon located at the bottom right of the view which on click will trigger the like() action
+the follow view has a like icon located at the  center of the view which on click will trigger the like() action
+the history view has a add icon located at the very-top center of the view which on click will trigger the add() action
+the history view has a like icon located at the bottom right of the view which on click will trigger the like() action
+the history view has a like icon located at the  center of the view which on click will trigger the like() action
+the search view has a add icon located at the very-top center of the view which on click will trigger the add() action
+the search view has a like icon located at the bottom right of the view which on click will trigger the like() action
+the search view has a like icon located at the  center of the view which on click will trigger the like() action
+the history view has a add icon located at the very-top center of the view which on click will trigger the add() action
+the history view has a like icon located at the bottom right of the view which on click will trigger the like() action
+the history view has a like icon located at the  center of the view which on click will trigger the like() action
+the sign up view has a add icon located at the very-top center of the view which on click will trigger the add() action
+the sign up view has a like icon located at the bottom right of the view which on click will trigger the like() action
+the sign up view has a like icon located at the  center of the view which on click will trigger the like() action
+the search view has a add icon located at the very-top center of the view which on click will trigger the add() action
+the search view has a like icon located at the bottom right of the view which on click will trigger the like() action
+the search view has a like icon located at the  center of the view which on click will trigger the like() action
+the sign up view has a add icon located at the very-top center of the view which on click will trigger the add() action
+the sign up view has a like icon located at the bottom right of the view which on click will trigger the like() action
+the sign up view has a like icon located at the  center of the view which on click will trigger the like() action
+the follow view has a add icon located at the very-top center of the view which on click will trigger the add() action
+the follow view has a like icon located at the bottom right of the view which on click will trigger the like() action
+the follow view has a like icon located at the  center of the view which on click will trigger the like() action
+the sign up view has a add icon located at the very-top center of the view which on click will trigger the add() action
+the sign up view has a like icon located at the bottom right of the view which on click will trigger the like() action
+the sign up view has a like icon located at the  center of the view which on click will trigger the like() action
+the search view has a add icon located at the very-top center of the view which on click will trigger the add() action
+the search view has a like icon located at the bottom right of the view which on click will trigger the like() action
+the search view has a like icon located at the  center of the view which on click will trigger the like() action
+the history view has a add icon located at the very-top center of the view which on click will trigger the add() action
+the history view has a like icon located at the bottom right of the view which on click will trigger the like() action
+the history view has a like icon located at the  center of the view which on click will trigger the like() action
 
 */
         
@@ -40,6 +66,7 @@ import { Row, Col , Input, InputGroup, InputGroupText } from 'reactstrap';
             state = {
                  show_loading_indicator: false,
                 search : '', 
+like_counts : '', 
 
             }
     
@@ -59,6 +86,7 @@ import { Row, Col , Input, InputGroup, InputGroupText } from 'reactstrap';
 
                         let close,_data      =  {};
 				close,_data.search   = this.state.search 
+				close,_data.like_counts   = this.state.like_counts 
 
 
                         //Dispatch action mapped to redux
@@ -78,6 +106,7 @@ import { Row, Col , Input, InputGroup, InputGroupText } from 'reactstrap';
 
                         let close,_data      =  {};
 				close,_data.search   = this.state.search 
+				close,_data.like_counts   = this.state.like_counts 
 
 
                         //Dispatch action mapped to redux
@@ -97,6 +126,7 @@ import { Row, Col , Input, InputGroup, InputGroupText } from 'reactstrap';
 
                         let close,_data      =  {};
 				close,_data.search   = this.state.search 
+				close,_data.like_counts   = this.state.like_counts 
 
 
                         //Dispatch action mapped to redux
@@ -116,6 +146,7 @@ import { Row, Col , Input, InputGroup, InputGroupText } from 'reactstrap';
 
                         let close,_data      =  {};
 				close,_data.search   = this.state.search 
+				close,_data.like_counts   = this.state.like_counts 
 
 
                         //Dispatch action mapped to redux
@@ -135,6 +166,7 @@ import { Row, Col , Input, InputGroup, InputGroupText } from 'reactstrap';
 
                         let close,_data      =  {};
 				close,_data.search   = this.state.search 
+				close,_data.like_counts   = this.state.like_counts 
 
 
                         //Dispatch action mapped to redux
@@ -154,6 +186,7 @@ import { Row, Col , Input, InputGroup, InputGroupText } from 'reactstrap';
 
                         let close,_data      =  {};
 				close,_data.search   = this.state.search 
+				close,_data.like_counts   = this.state.like_counts 
 
 
                         //Dispatch action mapped to redux
@@ -173,6 +206,7 @@ import { Row, Col , Input, InputGroup, InputGroupText } from 'reactstrap';
 
                         let close_data      =  {};
 				close_data.search   = this.state.search 
+				close_data.like_counts   = this.state.like_counts 
 
 
                         //Dispatch action mapped to redux
@@ -192,6 +226,7 @@ import { Row, Col , Input, InputGroup, InputGroupText } from 'reactstrap';
 
                         let close_data      =  {};
 				close_data.search   = this.state.search 
+				close_data.like_counts   = this.state.like_counts 
 
 
                         //Dispatch action mapped to redux
@@ -211,6 +246,7 @@ import { Row, Col , Input, InputGroup, InputGroupText } from 'reactstrap';
 
                         let close_data      =  {};
 				close_data.search   = this.state.search 
+				close_data.like_counts   = this.state.like_counts 
 
 
                         //Dispatch action mapped to redux
@@ -230,6 +266,7 @@ import { Row, Col , Input, InputGroup, InputGroupText } from 'reactstrap';
 
                         let close_data      =  {};
 				close_data.search   = this.state.search 
+				close_data.like_counts   = this.state.like_counts 
 
 
                         //Dispatch action mapped to redux
@@ -249,6 +286,7 @@ import { Row, Col , Input, InputGroup, InputGroupText } from 'reactstrap';
 
                         let close_data      =  {};
 				close_data.search   = this.state.search 
+				close_data.like_counts   = this.state.like_counts 
 
 
                         //Dispatch action mapped to redux
@@ -268,6 +306,7 @@ import { Row, Col , Input, InputGroup, InputGroupText } from 'reactstrap';
 
                         let close_data      =  {};
 				close_data.search   = this.state.search 
+				close_data.like_counts   = this.state.like_counts 
 
 
                         //Dispatch action mapped to redux
